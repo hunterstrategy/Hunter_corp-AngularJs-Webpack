@@ -20,11 +20,15 @@
   },
   "homepage": "https://github.com/preboot/angularjs-webpack",
   "dependencies": {
-    "angular": "^1.7.0"
+    "angular": "^1.7.0",
+    "angular-animate": "~1.4.0",
+    "angular-aria": "~1.4.0"
   },
   "devDependencies": {
     "ajv": "^6.4.0",
+    "angular-material": "^1.1.20",
     "angular-mocks": "^1.7.0",
+    "angular-ui-router": "^1.0.22",
     "autoprefixer": "^8.4.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -34,6 +38,7 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "2.0.0-beta.5",
     "file-loader": "^1.1.11",
+    "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^3.2.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine-core": "^3.1.0",

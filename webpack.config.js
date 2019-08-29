@@ -99,6 +99,16 @@ module.exports = function makeWebpackConfig() {
         ],
       })
     }, {
+      test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+      use: [{
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'fonts/',    // where the fonts will go
+          publicPath: '../'       // override the default path
+        }
+      }]
+    }, {
       // CSS LOADER
       // Reference: https://github.com/webpack/css-loader
       // Allow loading css through js

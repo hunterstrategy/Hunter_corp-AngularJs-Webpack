@@ -1,7 +1,9 @@
 $font-stack:    Arial, Helvetica, sans-serif;
-$primary-color: #0147A7;
+$primary-color: #ffffff;
 $secondary-color: rgb(167, 1, 159);
 
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
 
 body {
   background: $primary-color;

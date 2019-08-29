@@ -1,6 +1,8 @@
 import angular from 'angular';
 
-import Styles from './app.scss';
+import 'font-awesome/css/font-awesome.css';
+
+import styles from './app.scss';
 
 let app = () => {
   return {
