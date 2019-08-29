@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-import '../style/app.css';
+import Styles from './app.scss';
 
 let app = () => {
   return {

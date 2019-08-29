@@ -90,6 +90,15 @@ module.exports = function makeWebpackConfig() {
       loader: 'babel-loader',
       exclude: /node_modules/
     }, {
+      test: /\.scss$/,
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: [
+          { loader: 'css-loader', query: {sourceMap: true}}, 
+          {loader: 'sass-loader'}
+        ],
+      })
+    }, {
       // CSS LOADER
       // Reference: https://github.com/webpack/css-loader
       // Allow loading css through js
