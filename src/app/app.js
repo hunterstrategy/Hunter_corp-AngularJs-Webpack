@@ -3,6 +3,13 @@ import angular from 'angular';
 import 'font-awesome/css/font-awesome.css';
 
 import styles from './app.scss';
+import 'angular-material/angular-material.css';
+// Angular Animate
+import angularAnimate from 'angular-animate';
+// Materail Design lib
+import angularMaterial from 'angular-material';
+// Router
+import angularUIRouter from 'angular-ui-router';
 
 let app = () => {
   return {
@@ -20,7 +27,10 @@ class AppCtrl {
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [])
+angular.module(MODULE_NAME,  [
+  angularMaterial,
+  angularAnimate,
+  angularUIRouter])
   .directive('app', app)
   .controller('AppCtrl', AppCtrl);
 
